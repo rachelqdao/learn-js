@@ -22,8 +22,7 @@ window.onload = function() {
               // loop through the sorted array, and display all the search terms in the list
               for (const itemText of myHistoryCopy) {
                 const listItem = document.createElement("li");
-                let itemNodeText = createTxtNode(itemText);
-                listItem.appendChild(itemNodeText)
+                listItem.textContent = itemText;
                 list.appendChild(listItem);
     
               }
